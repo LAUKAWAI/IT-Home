@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="小米公司：在全面屏技术领域已经申请了一百多项专利"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="2020-11-01 12:36:31    IT之家（远洋）" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:text="IT之家 11 月 1 日消息 小米公司官方微博今日发文预告 MIDC 2020 小米开发者大会，并称今天已经普及的全面屏是小米最早发明的，在全面屏技术领域小米已经申请了一百多项专利。"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/d1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:text="小米集团副总裁、集团技术委员会主席崔宝秋博士称，2016 年发布的小米 MIX 手机，正式开启了全球手机的全面屏时代，小米还首推环绕屏概念手机，持续探索并引领手机屏幕形态的创新，在全面屏技术领域小米已经申请了一百多项专利。"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:text="崔宝秋还称，在高帧率方面，小米引领行业从 90Hz 到首推 120Hz，再到 144Hz，在专业光学效果方面，小米首推阳光屏和夜光屏技术，获得了首款中国计量院的专业屏幕认证，最近发布的小米透明电视，是全球第一款量产的透明电视。"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:text="IT之家了解到，第四届小米开发者大会 MIDC 将于 2020 年 11 月 5 日 - 7 日举办，主题为 “生活的科技”。"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/detailed_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14">
+
+    </include>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
